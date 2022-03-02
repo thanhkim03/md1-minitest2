@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuthuong</title>
+</head>
+<body>
+<script>let arr = prompt("Nhập chuỗi: ")
+let a = 'QWERTYUIOPASDFGHJKLZXCVBNM'
+let b ='qwertyuiopasdfghjklzxcvbnm'
+let num = []
+for (let i=0; i<arr.length; i++){
+    if(a.indexOf(arr[i])!==-1){
+        num.push(arr[i].toLowerCase())
+    }else if(b.indexOf(arr[i]!==-1)){
+        num.push(arr[i].toUpperCase())
+    }else{
+        num.push(arr[i])
+    }
+}alert(num.join(""))
+</script>
+</body>
+</html>
